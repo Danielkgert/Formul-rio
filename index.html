@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Evento</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="text">
+                <h1>
+                    Crie e compartilhe
+                    seu evento.
+                </h1>
+        
+                <p>
+                    O primeiro passo, é preencher esse
+                    formulário de inscrição.
+                </p>
+            </div>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Informações do Evento</legend>
+
+                    <div class="input-wrapper">
+                        <label for="event-title">Título do evento <strong>(mínimo 8 caracteres)</strong> </label>
+                        <input id="event-title" type="text">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="event-link">Link do evento <strong>(comece com https://)</strong> </label>
+                        <input id="event-link" type="text">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="event-contact">WhatsApp para contato <strong>(somente números)</strong> </label>
+                        <input id="event-contect" type="number">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="extra-info">Informações  extras</label>
+                        <textarea id="extra-info"></textarea>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="event-type">Categoria</label>
+                        <input id="event-type" type="text" placeholder="Tipo do evento">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Privacidade</legend>
+                    <div class="input-wrapper">
+                        <label for="event-email">E-mail do administrador <strong>(digite um email válido)</strong> </label>
+                        <input id="event-email" type="email">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="event-password">Senha de acesso para os participantes <strong>(mínimo 8 caracteres)</strong> </label>
+                        <input id="event-password" type="password">
+                    </div>
+                    <div class="checkbox">
+                        <input id="event-password" type="checkbox">
+                        <label for="event-password">Evento privado</label>
+                    </div>
+                </fieldset>
+                <fieldset class="">
+                    <legend>Dia e hora</legend>
+                    <div class="rolls-3">
+                        <div class="input-wrapper">
+                          <label for="date">Data</label>
+                          <input id="date" type="date" />
+                        </div>
+        
+                        <div class="input-wrapper">
+                          <label for="start">Das</label>
+                          <input id="start" type="time" />
+                        </div>
+        
+                        <div class="input-wrapper">
+                          <label for="end">Até</label>
+                          <input id="end" type="time" />
+                        </div>
+                      </div>
+                </fieldset>
+        
+            </form>
+        
+            <div class="submit">
+        
+                  <button type="submit">Salvar evento</button>
+        
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
